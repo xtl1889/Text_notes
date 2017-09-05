@@ -2,11 +2,10 @@
 
 
 1、包冲突
-
-	错误提示：
-			Error:Execution failed for task ':app:preDexDebug'.
-			> com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException:
-			 Process 'command 'D:\Program Files\Java\jdk\bin\java.exe'' finished with non-zero exit value 1
+     错误提示：
+	Error:Execution failed for task ':app:preDexDebug'.
+	> com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException:
+	Process 'command 'D:\Program Files\Java\jdk\bin\java.exe'' finished with non-zero exit value 1
 			 
 	解决办法：
 	//需要添加的代码
@@ -15,14 +14,13 @@
 	}
 	
 2、包太陈旧(需要在android studio 里面新增一些代码  来兼容这些老版)
-
-	错误提示：
-			Error:Execution failed for task ':app:packageDebug'.
+   错误提示：
+	Error:Execution failed for task ':app:packageDebug'.
 	> Duplicate files copied in APK META-INF/LICENSE.txt
-		File 1: F:\work\My_Demo\social_sdk_example2\app\libs\httpmime-4.1.3.jar
-		File 2: F:\work\My_Demo\social_sdk_example2\app\libs\twitter4j-core-4.0.4.jar
+	File 1: F:\work\My_Demo\social_sdk_example2\app\libs\httpmime-4.1.3.jar
+	File 2: F:\work\My_Demo\social_sdk_example2\app\libs\twitter4j-core-4.0.4.jar
 		
-		解决办法：（http://stackoverflow.com/questions/22467127/error-duplicate-files-during-packaging-of-apk）
+	解决办法：（http://stackoverflow.com/questions/22467127/error-duplicate-files-during-packaging-of-apk）
 			//需要添加的代码
 			android {
     			packagingOptions {
@@ -34,22 +32,19 @@
 		        exclude 'META-INF/ASL2.0'
 		        exclude 'META-INF/notice.txt'
    			 }
-			}
-			
-			
+			}			
 3、
-	
-		错误提示:
-		Error:Execution failed for task ':ProjectName:mergeDebugResources'. 
-		> Crunching Cruncher *some file* failed, see logs
+   错误提示:
+	Error:Execution failed for task ':ProjectName:mergeDebugResources'. 
+	> Crunching Cruncher *some file* failed, see logs
 		
-		解决办法： http://stackoverflow.com/questions/29026024/errorexecution-failed-for-task-projectnamemergedebugresources-crunching
-			1、Open your Android Studio (AS) program.
-			2、Go to your build.gradle file in your project.
-			3、Change:
-				dependencies {
+	解决办法： http://stackoverflow.com/questions/29026024/errorexecution-failed-for-task-projectnamemergedebugresources-crunching
+		1、Open your Android Studio (AS) program.
+		2、Go to your build.gradle file in your project.
+		3、Change:
+			dependencies {
 				    classpath 'com.android.tools.build:gradle:1.1.0'
-				to:
+			to:
 				dependencies {
 				    classpath 'com.android.tools.build:gradle:1.1.3'
 			4、Clean your project.
