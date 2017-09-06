@@ -27,6 +27,7 @@ git pull --rebase
 git push origin master 提交
 
 /×××××××××××××××××××××××××××××××/
+
 git reset --hard  清理
 
 git reset HEAD^ 回退 commit
