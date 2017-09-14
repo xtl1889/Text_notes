@@ -57,3 +57,5 @@
 		
 		解决办法：点击 tools ->Android->sync project with gradles files
 		
+5、Android Studio有时无法自动提示对象，只能只能提示方法。例如，当输入TextView时无法自动提示，也无法引入包。当手动收入TextView后，按Alt+Enter 提示也没有引入包的提示。
+处理：file-->invalidate Caches/Restart(清楚缓存并重启)
