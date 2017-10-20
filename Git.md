@@ -26,6 +26,35 @@ git pull --rebase
 
 git push origin master 提交
 
+/×××××××××××××分支合并××××××××××××××××××/
+
+去自己的工作分支
+$ git checkout work
+
+提交工作分支的修改
+$ git commit -a
+
+回到主分支
+$ git checkout master
+
+获取远程最新的修改，此时不会产生冲突
+$ git pull
+
+回到工作分支
+$ git checkout work
+
+用rebase合并主干的修改，如果有冲突在此时解决
+$ git rebase master
+
+回到主分支
+$ git checkout master
+
+合并工作分支的修改，此时不会产生冲突。
+$ git merge work
+
+提交到远程主干
+$ git push
+
 /×××××××××××××××××××××××××××××××/
 
 git reset --hard  清理
