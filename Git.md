@@ -26,6 +26,30 @@ git pull --rebase
 
 git push origin master 提交
 
+/×××××××××××××分支创建××××××××××××××××××/
+
+1 查看远程分支
+   $ git branch -a  
+
+2 查看本地分支
+  $ git branch  
+  
+3 创建分支
+  $ git branch newBranch(分支名)
+  
+4 切换分支
+  $ git checkout newBranch
+
+5 线面是把分支推到远程分支 
+  $ git push origin newBranch  
+ 
+6 创建并切换到该分支（相当于3 4）
+  $ git checkout -b newBranch
+  
+7 删除远程分支  
+    git branch -r -d origin/branch-name  
+    git push origin :branch-name  
+
 /×××××××××××××分支合并××××××××××××××××××/
 
 去自己的工作分支
