@@ -35,8 +35,8 @@ git push origin master 提交
     $ git branch  
   
 3 创建分支    
-    $ git branch newBranch(分支名)   
-  
+    $ git branch newBranch(分支名)    
+   
 4 切换分支    
     $ git checkout newBranch
 
