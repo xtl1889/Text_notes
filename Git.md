@@ -96,4 +96,8 @@ git checkout master      恢复到回退时候的代码
 
 /***问题1*************************************************************/
 
-有时遇到clone下来代码，在Android Studio中没有显示 Update project 和 Commit Changes 图标，而且更改代码 所在文件名没有变为蓝色(提示该文件已经修改),新建的文件名也不是红色(提示改文件为新增文件)，但是用命令提交代码是正常的。此时：VCS-->Enable Version Control Integration,选中git即可(将Android Studio项目进行初始化git)。
+有时遇到clone下来代码，在Android Studio中没有显示 Update project 和 Commit Changes 图标，而且更改代码 所在文件名没有变为蓝色(提示该文件已经修改),新建的文件名也不是红色(提示改文件为新增文件)，但是用命令提交代码是正常的。此时：VCS-->Enable Version Control Integration,选中git即可(将Android Studio项目进行初始化git)。    
+
+/***问题2*************************************************************/
+    git branch -a  有时无法显示出来所以远程分支时
+    执行 get fetch 将本地远程跟踪分支进行更新，与远程分支保持一致
