@@ -103,9 +103,11 @@ $ git push
     1、进入项目根目录---->.idea--->vcs.xml     
     
       修改   
+      
       <mapping directory="" vcs="Git" />     
         
       修改后   
+      
       <mapping directory="" vcs="" />    
         
     2、删除跟目录下的 .git 目录  重新打开项目即可   
