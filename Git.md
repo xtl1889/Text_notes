@@ -83,24 +83,20 @@ $ git push
 
 /××××××××××上传代码到git服务器×××××××××××××××××××××/
     
+    
    进入代码目录  
-     
-   $git init  //初始化本地仓库      
    
-     
+   $git init  //初始化本地仓库   
+   
    $git add * //或添加需要提交的文件     
    
-     
-   $git commit -m "init project" //提交到本地仓库的备注   
+   $git commit -m "init project" //提交到本地仓库的备注   
    
-     
    $git remote add origin git@github.com:xtl1889/Text_notes.git //和远程仓库项目进行关联     
    
-     
    $git push -u origin master //提交到远程仓库    
    
-
-
+   
 /××××××××××项目与git服务器断开连接×××××××××××××××××××××/    
     
  以android Studio项目为例：      
