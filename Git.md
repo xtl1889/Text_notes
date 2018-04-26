@@ -16,6 +16,9 @@ git clone "----------" 克隆代码
 
 如果有冲突 解决冲突 。。。
 
+处理完冲突后 git add (有冲突的文件路径) 将处理完的文件加入到 缓存   
+然后在 git stash  apply
+
 git add app/src (或者  .)
 git commit -m "xxxxx"
 
