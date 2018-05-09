@@ -130,7 +130,7 @@ $ git  merge newBranch(分支名称)
 /××××××××××××版本回退×××××××××××××××××××/                                                                                
    
       要回退的版本
-    git reset --hard 139dcfaa558e3276b30b6b2e5cbbb9c00bbdca96  回退的版本
+    git reset --hard 139dcfaa558e3276b30b6b2e5cbbb9c00bbdca96 
 
     把修改推到远程服务器
     git push -f -u origin master  
@@ -160,11 +160,12 @@ git checkout master      恢复到回退时候的代码
 
 
   切换分支提示：
-    error: The following untracked working tree files would be overwritten by merge:
-             bin/AndroidManifest.xml
-            Please move or remove them before you can merge.
+    error: The following untracked working tree files would be overwritten by merge:     
+             bin/AndroidManifest.xml         
+            Please move or remove them before you can merge.                    
             
-            git clean  -d  -fx ""
+       执行：
+            git clean  -d  -fx ""
     其中 
         x  -----删除忽略文件已经对git来说不识别的文件
         d  -----删除未被添加到git的路径中的文件
