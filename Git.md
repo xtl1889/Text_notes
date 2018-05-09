@@ -165,9 +165,10 @@ git checkout master      恢复到回退时候的代码
             Please move or remove them before you can merge.                    
             
        执行：
-            git clean  -d  -fx ""
+            git clean  -d  -fx    
+            
     其中 
-        x  -----删除忽略文件已经对git来说不识别的文件
-        d  -----删除未被添加到git的路径中的文件
-        f  -----强制运行
+        x  -----删除忽略文件已经对git来说不识别的文件           
+        d  -----删除未被添加到git的路径中的文件              
+        f  -----强制运行              
   
