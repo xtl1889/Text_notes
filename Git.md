@@ -72,6 +72,7 @@ git push origin master 提交
 
 用rebase合并主干的修改，如果有冲突在此时解决           
   $ git rebase master
+  (如果有问题 git rebase --abort  命令可以撤销该操作)
 
 回到主分支         
   $ git checkout master
