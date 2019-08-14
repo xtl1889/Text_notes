@@ -137,6 +137,19 @@ $ git  merge newBranch(分支名称)
     git push -f -u origin master  
 /×××××××××××××××××××××××××××××××/
 
+/××××××××××××关于强制更新×××××××××××××××××××/
+      
+      下载远程仓库最新内容，不做合并
+       git fetch --all
+    1、 远程分支覆盖本地分支(如：远程master覆盖本地master分支代码 )
+        进入master分支
+        git reset --hard origin/master 
+    2、远程master分支 覆盖本地 branch分支
+        进入branch分支
+         git reset --hard origin/master 
+
+/×××××××××××××××××××××××××××××××/
+
 git reset --hard  清理
 
 git reset HEAD^ 回退 commit
