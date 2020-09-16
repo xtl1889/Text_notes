@@ -203,4 +203,17 @@ git checkout master      恢复到回退时候的代码
     注意不可使用 git reset --hard  或者 git reset --merge                            
     
     
+    /***问题5*************************************************************/        
+    
+      更新或者克隆代码时提示：
+      
+      fatal: Could not read from remote repository.
+        Please make sure you have the correct access rights
+        and the repository exists.
+        
+     有可能是：远程代码地址有改动，本地关联的地址和远程分支地址不一致导致的。
+     
+      git remote -v    查看本地代码关联的地址
+      git remote rm origin   删除关联的地址
+      git remote add origin 新的地址路径   关联新的地址路径    
     
