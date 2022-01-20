@@ -49,9 +49,12 @@ git push origin master 提交
 6 创建并切换到该分支（相当于3 4）    
     $ git checkout -b newBranch
   
-7 删除远程分支  
-    git branch -r -d origin/branch-name  
-    git push origin :branch-name  
+7 删除本地分支
+    $ git branch -d <BranchName>
+    
+8 删除远程分支  
+   $ git push origin --delete <BranchName>
+
 
 /×××××××××××××分支合并××××××××××××××××××/
 
